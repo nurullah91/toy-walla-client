@@ -1,7 +1,19 @@
 import { Link, NavLink } from "react-router-dom";
 import { FaUserCircle } from 'react-icons/fa';
+import { useContext } from "react";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 const Navbar = () => {
+    const { user, photo, displayName, logOut } = useContext(AuthContext);
+
+
+    const handleLogOut = ()=>{
+        logOut()
+        .then()
+        .catch(err =>{
+            console.log(err);
+        })
+    }
 
     const navItem = <>
         <li><NavLink to='/' className={({ isActive }) => isActive ? "active" : ""
@@ -44,8 +56,16 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <FaUserCircle className="text-4xl"></FaUserCircle>
-                <Link to='/login' className="btn">Login</Link>
+                {
+                    user ? <>
+                        <img  src={user.photoURL || photo} alt={user.displayName || displayName} title={user.displayName || displayName} className="rounded-full h-11 mr-2 w-11" />
+                        <button onClick={handleLogOut} to='/login' className="btn">Log out</button>
+                    </> :
+                        <>
+                            <FaUserCircle className="text-4xl"></FaUserCircle>
+                            <Link to='/login' className="btn">Login</Link>
+                        </>
+                }
             </div>
         </div>
     );
