@@ -1,8 +1,11 @@
 
+import { useContext } from 'react';
 import { FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Providers/AuthProvider';
 
 const Login = () => {
+    const {login, googleSignIn} = useContext(AuthContext);
 
     const handleLogin = event =>{
         event.preventDefault();
@@ -10,6 +13,24 @@ const Login = () => {
         const password = form.password.value;
         const email = form.email.value;
         console.log(email, password);
+
+        login(email, password)
+        .then(result =>{
+            console.log(result);
+        })
+        .catch(err=>{
+            console.log(err);
+        })
+    }
+
+    const handleGoogleSignIn = () =>{
+        googleSignIn()
+        .then(result =>{
+            console.log(result.user);
+        })
+        .catch(err=>{
+            console.log(err);
+        })
     }
 
     return (
@@ -45,7 +66,7 @@ const Login = () => {
 
                 <h4>Login With</h4>
                <div className='text-center'>
-               <button className='btn bg-red-500 border-none w-9/12 mt-3'><FaGoogle className='text-green-600 inline-flex mr-2 text-2xl'></FaGoogle> Google</button>
+               <button onClick={handleGoogleSignIn} className='btn bg-red-500 border-none w-9/12 mt-3'><FaGoogle className='text-green-600 inline-flex mr-2 text-2xl'></FaGoogle> Google</button>
                </div>
                <p>New to Toy Wala? please  <Link className='underline text-blue-800 font-bold' to='/register'>Register</Link></p>
 
