@@ -1,31 +1,58 @@
 
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
+import { updateProfile } from 'firebase/auth';
 
 const Register = () => {
+    const [error, setError] = useState('')
+    const { createUser, setPhoto, setUserName } = useContext(AuthContext);
 
-    const {createUser} = useContext(AuthContext);
 
-
-    const handleRegister = event =>{
+    const handleRegister = event => {
         event.preventDefault();
         const form = event.target;
         const name = form.name.value;
         const password = form.password.value;
         const email = form.email.value;
         const photoUrl = form.photo.value;
-        console.log(name, email, photoUrl,password);
+        console.log(name, email, photoUrl, password);
 
-        createUser(email, password)
-        .then(result =>{
-            const user = result.user;
-            console.log(user);
+        if (password.length < 6) {
+            setError("Password should be more than 6 character")
+        }
+        else {
+            createUser(email, password)
+                .then(result => {
+                    const user = result.user;
+                    updateUser(user, photoUrl,name);
+                   setError('');
+                   form.reset()
+                })
+                .catch(err => {
+                    setError(err.message)
+                    console.log(err);
+
+                })
+        }
+
+    }
+
+
+    const updateUser = (user, photoUrl, name) =>{
+        updateProfile(user, {
+            displayName: name,
+            photoURL: photoUrl
+
         })
-        .catch(err=>{
+        .then(
+            setPhoto(photoUrl),
+            setUserName(name)
+        )
+        .catch(err =>{
             console.log(err);
         })
-        
+
     }
 
 
@@ -69,8 +96,8 @@ const Register = () => {
 
 
                         <input className='btn bg-red-500 mt-3 border-none shadow-md' type="submit" value="Register" />
-                      
 
+                        <h4 className='my-3 text-red-600'>{error}</h4>
 
                     </div>
                 </form>
