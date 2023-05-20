@@ -20,25 +20,27 @@ const AllToys = () => {
         setShowALl(limit)
     }
     const handleSearch = () => {
-        fetch(`http://localhost:5000/getJobsByText/${searchText}`)
-          .then((res) => res.json())
-          .then((data) => {
-            console.log(data);
-            setToys(data);
-          });
-      };
-    
+        fetch(`http://localhost:5000/cars-by-name/${searchText}`)
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                setToys(data);
+            });
+    };
+
     return (
         <div>
             <div>
 
-                <div className="search-box p-2 text-center">
-                    <input
-                        onChange={(e) => setSearchText(e.target.value)}
-                        type="text"
-                        className="p-1"
-                    />{" "}
-                    <button onClick={handleSearch}>Search</button>
+                <div className="text-center my-5">
+                    <div className="btn-group p-2">
+                        <input
+                            onChange={(e) => setSearchText(e.target.value)}
+                            type="text"
+                            className="p-2  bg-blue-100 shadow-md rounded"
+                        />{" "}
+                        <button className="btn bg-rose-500 border-none shadow-md" onClick={handleSearch}>Search</button>
+                    </div>
                 </div>
 
                 <div className="overflow-x-auto">
