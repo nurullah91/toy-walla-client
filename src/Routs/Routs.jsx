@@ -10,6 +10,7 @@ import AddToy from "../Pages/AddToy/AddToy";
 import Blog from "../Pages/Blog/Blog";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import UpdateToy from "../Pages/MyToys/UpdateToy";
 
 
 
@@ -52,6 +53,11 @@ const router = createBrowserRouter([
         {
           path:'/register',
           element: <Register></Register>
+        },
+        {
+          path:'/update-toy/:id',
+          element: <UpdateToy></UpdateToy>,
+          loader: ({params})=>fetch(`http://localhost:5000/toy-car/${params.id}`)
         }
     ]
   },
