@@ -6,13 +6,12 @@ import { AuthContext } from "../../../Providers/AuthProvider";
 const Navbar = () => {
     const { user, photo, displayName, logOut } = useContext(AuthContext);
 
-
-    const handleLogOut = ()=>{
+    const handleLogOut = () => {
         logOut()
-        .then()
-        .catch(err =>{
-            console.log(err);
-        })
+            .then()
+            .catch(err => {
+                console.log(err);
+            })
     }
 
     const navItem = <>
@@ -20,10 +19,16 @@ const Navbar = () => {
         }>Home</NavLink></li>
         <li><NavLink to='/alltoys' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
         }>All toys</NavLink></li>
-        <li><NavLink to='/mytoys' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
-        }>My toys</NavLink></li>
-        <li><NavLink to='/addtoy' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
-        }>Add a toy</NavLink></li>
+
+
+        {user && <>
+            <li><NavLink to='/mytoys' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
+            }>My toys</NavLink></li>
+            <li><NavLink to='/addtoy' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
+            }>Add a toy</NavLink></li>
+        </>}
+
+
         <li><NavLink to='/blog' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
         }>Blog</NavLink></li>
 
@@ -58,7 +63,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ? <>
-                        <img  src={user.photoURL || photo} alt={user.displayName || displayName} title={user.displayName || displayName} className="rounded-full h-11 mr-2 w-11" />
+                        <img src={user.photoURL || photo} alt={user.displayName || displayName} title={user.displayName || displayName} className="rounded-full h-11 mr-2 w-11" />
                         <button onClick={handleLogOut} to='/login' className="btn bg-rose-500 border-none shadow-md">Log out</button>
                     </> :
                         <>

@@ -61,6 +61,7 @@ const MyToys = () => {
         <div>
             <h3 className="text-center text-4xl my-8 font-bold">My toys</h3>
            
+           {/* sorting button conditionally added */}
            <div>
             {
                  sort == 'high'?<button onClick={()=>setSort('low')} className="bg-rose-500 text-white px-5 py-3 rounded-md ml-5">Sort by low Price</button>:
