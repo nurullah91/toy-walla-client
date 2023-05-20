@@ -36,7 +36,7 @@ const Shop = () => {
 
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-11/12 md:w-9/12 mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-11/12 md:w-9/12 mx-auto my-10">
                     {
                         cars.map(car => <CarCard key={car._id} car={car}></CarCard>)
                     }

@@ -29,8 +29,8 @@ const UpdateToy = () => {
             .then(result => {
                 if (result.modifiedCount > 0) {
                     Swal.fire(
-                        'Good job!',
-                        'You clicked the button!',
+                        'Success',
+                        'Toy info update successfully',
                         'success'
                     )
                 }
@@ -72,7 +72,7 @@ const UpdateToy = () => {
 
 
                             <div className="col-span-2 text-center">
-                                <input className="btn btn-secondary w-3/4 " type="submit" />
+                                <input className="btn bg-green-500 border-none w-3/4 " type="submit" />
                             </div>
                         </div>
                     </form>
