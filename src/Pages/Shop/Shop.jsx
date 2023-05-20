@@ -25,14 +25,14 @@ const Shop = () => {
         <div>
             <h1 className="text-center text-5xl font-bold my-10">Shop a Toy Car</h1>
 
-            <div>
-                <div className="text-center">
-                    <button onClick={() => handleCategory('all')} className={`btn border-none mr-2 ${category == 'all' ? 'bg-rose-500' : ''}`}>All Cars</button>
-                    <button onClick={() => handleCategory('racing')} className={`btn border-none mr-2 ${category == 'racing' ? 'bg-rose-500' : ''}`}>Racing</button>
-                    <button onClick={() => handleCategory('sports')} className={`btn border-none mr-2 ${category == 'sports' ? 'bg-rose-500' : ''}`}>Sports</button>
-                    <button onClick={() => handleCategory('trucks')} className={`btn border-none mr-2 ${category == 'truck' ? 'bg-rose-500' : ''}`}>Truck</button>
-                    <button onClick={() => handleCategory('police')} className={`btn border-none mr-2 ${category == 'police' ? 'bg-rose-500' : ''}`}>Police</button>
-                    <button onClick={() => handleCategory('emergency')} className={`btn border-none mr-2 ${category == 'emergency' ? 'bg-rose-500' : ''}`}>Emergency</button>
+            <div className="text-center my-5">
+                <div className="btn-group">
+                    <button onClick={() => handleCategory('all')} className={`btn border-none ${category == 'all' ? 'bg-rose-500' : ''}`}>All Cars</button>
+                    <button onClick={() => handleCategory('racing')} className={`btn border-none ${category == 'racing' ? 'bg-rose-500' : ''}`}>Racing</button>
+                    <button onClick={() => handleCategory('sports')} className={`btn border-none ${category == 'sports' ? 'bg-rose-500' : ''}`}>Sports</button>
+                    <button onClick={() => handleCategory('trucks')} className={`btn border-none ${category == 'trucks' ? 'bg-rose-500' : ''}`}>Truck</button>
+                    <button onClick={() => handleCategory('police')} className={`btn border-none ${category == 'police' ? 'bg-rose-500' : ''}`}>Police</button>
+                    <button onClick={() => handleCategory('emergency')} className={`btn border-none ${category == 'emergency' ? 'bg-rose-500' : ''}`}>Emergency</button>
 
                 </div>
 
