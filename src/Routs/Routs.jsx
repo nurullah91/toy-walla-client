@@ -12,6 +12,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import UpdateToy from "../Pages/MyToys/UpdateToy";
 import Details from "../Pages/Details/Details";
+import PrivateRout from "./PrivateRout";
 
 
 
@@ -36,12 +37,12 @@ const router = createBrowserRouter([
         },
         {
             path: '/mytoys',
-            element:<MyToys></MyToys>
+            element:<PrivateRout><MyToys></MyToys></PrivateRout>
 
         },
         {
             path: '/addtoy',
-            element: <AddToy></AddToy>
+            element: <PrivateRout><AddToy></AddToy></PrivateRout>
         },
         {
             path: "/blog",

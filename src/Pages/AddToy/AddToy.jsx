@@ -22,12 +22,11 @@ const AddToy = () => {
             .then(result => {
                 if(result.acknowledged === true){
                     Swal.fire(
-                        'Good job!',
-                        'You clicked the button!',
+                        'Done',
+                        'Your Product added Successfully',
                         'success'
                       )
                 }
-                console.log(result);
             })
     };
 
@@ -35,6 +34,9 @@ const AddToy = () => {
 
     return (
         <div className="w-11/12 bg-blue-50 p-5 rounded-lg lg:w-9/12 mx-auto my-10">
+            <h2 className="text-center text-4xl my-5 font-bold text-rose-500">Add a Toy</h2>
+
+           
             <form onSubmit={handleSubmit(onSubmit)}>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -95,7 +97,7 @@ const AddToy = () => {
 
 
                     <div className="col-span-2 text-center">
-                        <input className="btn btn-secondary w-3/4 " type="submit" />
+                        <input className="btn bg-green-400 border-none w-3/4 " value="Add toy" type="submit" />
                     </div>
                 </div>
             </form>
