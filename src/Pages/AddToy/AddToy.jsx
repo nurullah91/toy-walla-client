@@ -8,26 +8,27 @@ const AddToy = () => {
     const { user } = useContext(AuthContext)
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        console.log(data)
-        // fetch(`http://localhost:5000/addtoy`, {
-        //     method: "POST",
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(data)
 
-        // })
-        //     .then(res => res.json())
-        //     .then(result => {
-        //         if(result.acknowledged === true){
-        //             Swal.fire(
-        //                 'Good job!',
-        //                 'You clicked the button!',
-        //                 'success'
-        //               )
-        //         }
-        //         console.log(result);
-        //     })
+        console.log(data)
+        fetch(`http://localhost:5000/addtoy`, {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+
+        })
+            .then(res => res.json())
+            .then(result => {
+                if(result.acknowledged === true){
+                    Swal.fire(
+                        'Good job!',
+                        'You clicked the button!',
+                        'success'
+                      )
+                }
+                console.log(result);
+            })
     };
 
 
@@ -56,6 +57,13 @@ const AddToy = () => {
 
                     <div>
                         <label>Sub Category</label>
+
+                        {/* <select id="selected" className="select select-bordered w-full max-w-xs">
+                            <option disabled selected>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select> */}
+
 
                         <input className="border block shadow-md rounded-md w-full my-3 p-3" defaultValue="racing" {...register("subCategory", { required: true })} />
                     </div>
