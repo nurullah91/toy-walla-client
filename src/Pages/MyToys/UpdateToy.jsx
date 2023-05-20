@@ -1,6 +1,5 @@
-import { useContext } from "react";
+
 import { useLoaderData } from "react-router-dom";
-import { AuthContext } from "../../Providers/AuthProvider";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
@@ -13,7 +12,6 @@ const UpdateToy = () => {
 
 
 
-    const { user } = useContext(AuthContext)
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
 

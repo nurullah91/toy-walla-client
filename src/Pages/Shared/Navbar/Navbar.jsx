@@ -16,15 +16,15 @@ const Navbar = () => {
     }
 
     const navItem = <>
-        <li><NavLink to='/' className={({ isActive }) => isActive ? "active" : ""
+        <li><NavLink to='/' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
         }>Home</NavLink></li>
-        <li><NavLink to='/alltoys' className={({ isActive }) => isActive ? "active" : ""
+        <li><NavLink to='/alltoys' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
         }>All toys</NavLink></li>
-        <li><NavLink to='/mytoys' className={({ isActive }) => isActive ? "active" : ""
+        <li><NavLink to='/mytoys' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
         }>My toys</NavLink></li>
-        <li><NavLink to='/addtoy' className={({ isActive }) => isActive ? "active" : ""
+        <li><NavLink to='/addtoy' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
         }>Add a toy</NavLink></li>
-        <li><NavLink to='/blog' className={({ isActive }) => isActive ? "active" : ""
+        <li><NavLink to='/blog' className={({ isActive }) => isActive ? "bg-rose-500 font-bold text-white" : ""
         }>Blog</NavLink></li>
 
     </>
@@ -59,11 +59,11 @@ const Navbar = () => {
                 {
                     user ? <>
                         <img  src={user.photoURL || photo} alt={user.displayName || displayName} title={user.displayName || displayName} className="rounded-full h-11 mr-2 w-11" />
-                        <button onClick={handleLogOut} to='/login' className="btn">Log out</button>
+                        <button onClick={handleLogOut} to='/login' className="btn bg-rose-500 border-none shadow-md">Log out</button>
                     </> :
                         <>
                             <FaUserCircle className="text-4xl"></FaUserCircle>
-                            <Link to='/login' className="btn">Login</Link>
+                            <Link to='/login' className="btn bg-rose-500 border-none shadow-md">Login</Link>
                         </>
                 }
             </div>
