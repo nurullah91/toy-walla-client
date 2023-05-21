@@ -6,7 +6,7 @@ const ToysRow = ({toy,index}) => {
 
     const {_id, photoUrl, toyName, sellerName, subCategory, price, quantity} = toy;
     return (
-        <tr className="">
+        <tr>
             <th>{index+1}</th>
             <th><img className="max-w-[8rem] rounded" src={photoUrl} alt="" /></th>
             <td>{toyName}</td>

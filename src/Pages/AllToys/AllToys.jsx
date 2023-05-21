@@ -53,7 +53,7 @@ const AllToys = () => {
                     <table className="table table-zebra w-full">
                         {/* head */}
                         <thead className="sticky top-0">
-                            <tr className="">
+                            <tr>
                                 <th>No.</th>
                                 <th>Photo</th>
                                 <th>Name</th>
@@ -76,7 +76,7 @@ const AllToys = () => {
                 </div>
             </div>
             <div className="text-center my-5 ">
-                {showAll == 'all' ? <button onClick={() => handleShowAll(5)} className="btn btn-secondary">Show less</button> : <button onClick={() => handleShowAll('all')} className="btn btn-secondary">Show all</button>
+                {showAll == 'all' ? <button onClick={() => handleShowAll(5)} className="btn bg-rose-500 border-none">Show less</button> : <button onClick={() => handleShowAll('all')} className="btn bg-rose-500 border-none">Show all</button>
                 }
             </div>
         </div >
