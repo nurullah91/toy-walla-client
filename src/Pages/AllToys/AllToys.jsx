@@ -53,6 +53,7 @@ const AllToys = () => {
                     <table className="table table-zebra w-full">
                         {/* head */}
                         <thead className="sticky top-0">
+                            
                             <tr>
                                 <th>No.</th>
                                 <th>Photo</th>

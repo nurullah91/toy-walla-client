@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Shop from "../../Shop/Shop";
 import Slider from "../Slider/Slider";
+import Gallery from "../Gallery/Gallery";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
 
         {/* components */}
            <Slider></Slider>
+           <Gallery></Gallery>
            <Shop></Shop>
             
         </div>
