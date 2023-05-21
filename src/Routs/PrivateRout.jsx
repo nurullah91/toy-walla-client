@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const PrivateRout = ({children}) => {
 
@@ -19,7 +20,16 @@ const PrivateRout = ({children}) => {
     if(user){
         return children;
     }
-    return <Navigate to='/login' state={{from: location}} replace></Navigate>
+    else{
+
+        
+        Swal.fire({
+            icon: 'warning',
+            title: 'Sorry...',
+            text:'To visit this page you have to login first',
+        });
+      return <Navigate to='/login' state={{from: location}} replace></Navigate>
+    }
 };
 
 export default PrivateRout;

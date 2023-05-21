@@ -5,6 +5,7 @@ import { AuthContext } from '../../Providers/AuthProvider';
 import { updateProfile } from 'firebase/auth';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 
 const Register = () => {
     const [error, setError] = useState('');
@@ -26,6 +27,8 @@ const Register = () => {
             setError("Password should be more than 6 character")
         }
         else {
+
+            // create a user on firebase
             createUser(email, password)
                 .then(result => {
                     const user = result.user;
@@ -55,7 +58,7 @@ const Register = () => {
 
     }
 
-
+    // update a user info after register
     const updateUser = (user, photoUrl, name) => {
         updateProfile(user, {
             displayName: name,
@@ -73,6 +76,7 @@ const Register = () => {
     };
 
 
+    // password show handle
     const handleShow = () => {
         setShow(!show);
     }
@@ -81,11 +85,19 @@ const Register = () => {
     return (
         <div className='custom-bg py-14'>
 
+            {/* dynamic title */}
+            <Helmet>
+                <title>Register-Toy wala</title>
+            </Helmet>
+
             <div className='text-center '>
                 <h2 className="text-5xl font-bold text-rose-600">Register page</h2>
 
 
                 <div className='w-9/12 mx-auto lg:w-1/4 bg-[#69a6e784] shadow-md p-5 my-5 rounded-lg'>
+
+                {/* Register form */}
+
                     <form onSubmit={handleRegister}>
                         <div className="form-control">
                             <label className="label">

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 const AddToy = () => {
@@ -20,12 +21,12 @@ const AddToy = () => {
         })
             .then(res => res.json())
             .then(result => {
-                if(result.acknowledged === true){
+                if (result.acknowledged === true) {
                     Swal.fire(
                         'Done',
                         'Your Product added Successfully',
                         'success'
-                      )
+                    )
                 }
             })
     };
@@ -34,9 +35,16 @@ const AddToy = () => {
 
     return (
         <div className="w-11/12 bg-blue-50 p-5 rounded-lg lg:w-9/12 mx-auto my-10">
+
+            {/* dynamic title */}
+            <Helmet>
+                <title>AddToy-Toy wala</title>
+            </Helmet>
+
+
             <h2 className="text-center text-4xl my-5 font-bold text-rose-500">Add a Toy</h2>
 
-           
+
             <form onSubmit={handleSubmit(onSubmit)}>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

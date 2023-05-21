@@ -4,6 +4,7 @@ import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
     const { login, googleSignIn } = useContext(AuthContext);
@@ -14,6 +15,8 @@ const Login = () => {
 
     const from = location.state?.from?.pathname || '/';
 
+
+    // sign in with users email and password
     const handleLogin = event => {
         event.preventDefault();
         const form = event.target;
@@ -47,6 +50,7 @@ const Login = () => {
             })
     }
 
+    // google sign in 
     const handleGoogleSignIn = () => {
         googleSignIn()
             .then(result => {
@@ -58,17 +62,29 @@ const Login = () => {
             })
     }
 
+    // password sow handle
     const handleShow = () => {
         setShow(!show);
     }
 
     return (
         <div className='custom-bg py-14'>
+
+            {/* dynamic tittle  */}
+            <Helmet>
+                <title>Login-Toy wala</title>
+            </Helmet>
+
+
             <div className='text-center'>
                 <h2 className="text-5xl font-bold text-rose-600 mb-5"> Please Login</h2>
 
 
                 <div className='w-9/12 mx-auto lg:w-1/4 bg-[#69a6e784] shadow-md p-5 my-5 rounded-lg'>
+
+
+                {/* Login form */}
+
                     <form onSubmit={handleLogin}>
                         <div className="form-control ">
                             <label className="label">

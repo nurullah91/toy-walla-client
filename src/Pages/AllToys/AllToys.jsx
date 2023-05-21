@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ToysRow from "./ToysRow";
+import { Helmet } from "react-helmet";
 
 const AllToys = () => {
 
@@ -30,6 +31,11 @@ const AllToys = () => {
 
     return (
         <div>
+
+            {/* dynamic title */}
+            <Helmet>
+                <title>AllToys-Toy wala</title>
+            </Helmet>
             <div>
 
                 <div className="text-center my-5">

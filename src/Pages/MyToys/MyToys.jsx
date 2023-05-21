@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import MyToysRow from "./MyToysRow";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const MyToys = () => {
 
@@ -59,15 +60,22 @@ const MyToys = () => {
 
     return (
         <div>
+            {/* dynamic title */}
+            <Helmet>
+                <title>MyToy-Toy wala</title>
+            </Helmet>
+
+
+
             <h3 className="text-center text-4xl my-8 font-bold">My toys</h3>
-           
-           {/* sorting button conditionally added */}
-           <div>
-            {
-                 sort == 'high'?<button onClick={()=>setSort('low')} className="bg-rose-500 text-white px-5 py-3 rounded-md ml-5">Sort by low Price</button>:
-                 <button onClick={()=>setSort('high')} className="bg-rose-500 text-white px-5 py-3 rounded-md ml-5">Sort by high Price</button>
-            }
-           </div>
+
+            {/* sorting button conditionally added */}
+            <div>
+                {
+                    sort == 'high' ? <button onClick={() => setSort('low')} className="bg-rose-500 text-white px-5 py-3 rounded-md ml-5">Sort by low Price</button> :
+                        <button onClick={() => setSort('high')} className="bg-rose-500 text-white px-5 py-3 rounded-md ml-5">Sort by high Price</button>
+                }
+            </div>
 
 
             <div>

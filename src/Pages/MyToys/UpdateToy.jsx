@@ -2,6 +2,7 @@
 import { useLoaderData } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 const UpdateToy = () => {
@@ -39,6 +40,11 @@ const UpdateToy = () => {
 
     return (
         <div>
+
+            {/* dynamic title */}
+            <Helmet>
+                <title>UpdateToy-Toy wala</title>
+            </Helmet>
             <div>
                 <h2 className="text-center text-3xl">Update {toyName} information.</h2>
                 <img className="max-w-[70vw] mx-auto max-h-[40vh] rounded-lg my-5" src={photoUrl} alt={toyName} />

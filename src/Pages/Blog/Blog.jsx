@@ -1,7 +1,13 @@
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
     return (
         <div className="custom-bg">
+
+            {/* dynamic title */}
+            <Helmet>
+                <title>Blog-Toy wala</title>
+            </Helmet>
 
             <div className="p-10">
                 <div className="w-11/12 lg:-9/12 mx-auto">
