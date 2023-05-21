@@ -1,11 +1,25 @@
+
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 const CarCard = ({ car }) => {
     const { _id, photoUrl,toyName, price, ratings } = car || {};
+
+    
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          delay: 200,
+          easing: 'ease-in-out',
+        });
+      }, []);
+
     return (
-        <div className="card bg-blue-50 shadow-xl">
+        <div data-aos="fade-up" className="card bg-[#42eeda2e] text-white shadow-xl">
             <figure><img src={photoUrl} className="w-full h-52" alt="image" /></figure>
             <div className="p-8">
                 <h2 className="card-title">{toyName}</h2>
