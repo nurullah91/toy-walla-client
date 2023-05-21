@@ -37,7 +37,7 @@ const Shop = () => {
             <h1 className="text-center text-rose-500 text-5xl font-bold py-10">Shop a Toy Car</h1>
 
             <div className="text-center my-5">
-                <div className="btn-group">
+                <div className="btn-group flex-wrap">
                     <button onClick={() => handleCategory('all')} className= {`btn hover:bg-rose-500  border-none ${category == 'all' ? 'bg-rose-500' : ''}`}>All Cars</button>
                     <button onClick={() => handleCategory('racing')} className={`btn hover:bg-rose-500 border-none ${category == 'racing' ? 'bg-rose-500' : ''}`}>Racing</button>
                     <button onClick={() => handleCategory('sports')} className={`btn hover:bg-rose-500 border-none ${category == 'sports' ? 'bg-rose-500' : ''}`}>Sports</button>
