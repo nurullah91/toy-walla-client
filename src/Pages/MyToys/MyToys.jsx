@@ -12,7 +12,7 @@ const MyToys = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/my-toys?email=${user?.email}&sort=${sort}`)
+        fetch(`https://toy-wala-server.vercel.app/my-toys?email=${user?.email}&sort=${sort}`)
             .then(res => res.json())
             .then(result => {
                 setToys(result)
@@ -33,7 +33,7 @@ const MyToys = () => {
             if (result.isConfirmed) {
 
 
-                fetch(`http://localhost:5000/my-toys/${id}`, {
+                fetch(`https://toy-wala-server.vercel.app/my-toys/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

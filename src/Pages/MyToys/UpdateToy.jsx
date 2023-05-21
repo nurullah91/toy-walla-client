@@ -16,7 +16,7 @@ const UpdateToy = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
 
-        fetch(`http://localhost:5000/toy-car/${_id}`, {
+        fetch(`https://toy-wala-server.vercel.app/toy-car/${_id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'

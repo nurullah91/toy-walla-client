@@ -59,12 +59,12 @@ const router = createBrowserRouter([
         {
           path:'/update-toy/:id',
           element: <PrivateRout><UpdateToy></UpdateToy></PrivateRout>,
-          loader: ({params})=>fetch(`http://localhost:5000/toy-car/${params.id}`)
+          loader: ({params})=>fetch(`https://toy-wala-server.vercel.app/toy-car/${params.id}`)
         },
         {
           path: '/car-details/:id',
           element:<PrivateRout><Details></Details></PrivateRout>,
-          loader:({params})=>fetch(`http://localhost:5000/toy-car/${params.id}`)
+          loader:({params})=>fetch(`https://toy-wala-server.vercel.app/toy-car/${params.id}`)
         }
     ]
   },

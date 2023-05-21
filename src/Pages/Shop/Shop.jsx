@@ -12,7 +12,7 @@ const Shop = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/cars-by-category/${category}`)
+        fetch(`https://toy-wala-server.vercel.app/cars-by-category/${category}`)
             .then(res => res.json())
             .then(result => {
                 setCars(result)
@@ -27,12 +27,12 @@ const Shop = () => {
 
             <div className="text-center my-5">
                 <div className="btn-group">
-                    <button onClick={() => handleCategory('all')} className={`btn border-none ${category == 'all' ? 'bg-rose-500' : ''}`}>All Cars</button>
-                    <button onClick={() => handleCategory('racing')} className={`btn border-none ${category == 'racing' ? 'bg-rose-500' : ''}`}>Racing</button>
-                    <button onClick={() => handleCategory('sports')} className={`btn border-none ${category == 'sports' ? 'bg-rose-500' : ''}`}>Sports</button>
-                    <button onClick={() => handleCategory('trucks')} className={`btn border-none ${category == 'trucks' ? 'bg-rose-500' : ''}`}>Truck</button>
-                    <button onClick={() => handleCategory('police')} className={`btn border-none ${category == 'police' ? 'bg-rose-500' : ''}`}>Police</button>
-                    <button onClick={() => handleCategory('emergency')} className={`btn border-none ${category == 'emergency' ? 'bg-rose-500' : ''}`}>Emergency</button>
+                    <button onClick={() => handleCategory('all')} className={`btn hover:bg-rose-500  border-none ${category == 'all' ? 'bg-rose-500' : ''}`}>All Cars</button>
+                    <button onClick={() => handleCategory('racing')} className={`btn hover:bg-rose-500 border-none ${category == 'racing' ? 'bg-rose-500' : ''}`}>Racing</button>
+                    <button onClick={() => handleCategory('sports')} className={`btn hover:bg-rose-500 border-none ${category == 'sports' ? 'bg-rose-500' : ''}`}>Sports</button>
+                    <button onClick={() => handleCategory('trucks')} className={`btn hover:bg-rose-500 border-none ${category == 'trucks' ? 'bg-rose-500' : ''}`}>Truck</button>
+                    <button onClick={() => handleCategory('police')} className={`btn hover:bg-rose-500 border-none ${category == 'police' ? 'bg-rose-500' : ''}`}>Police</button>
+                    <button onClick={() => handleCategory('emergency')} className={`btn hover:bg-rose-500 border-none ${category == 'emergency' ? 'bg-rose-500' : ''}`}>Emergency</button>
 
                 </div>
 
