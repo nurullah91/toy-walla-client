@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 const AllToys = () => {
 
-    const [showAll, setShowALl] = useState(5);
+    const [showAll, setShowALl] = useState(20);
     const [toys, setToys] = useState([]);
     const [searchText, setSearchText] = useState("");
 
