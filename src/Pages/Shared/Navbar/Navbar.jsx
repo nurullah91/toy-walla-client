@@ -47,7 +47,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex items-center">
-                    <img className="w-20 h-16 rounded-full" src="/logo1.png" alt="toy wala" />
+                    <img className="w-16 h-16 rounded-full" src="/logo1.png" alt="toy wala" />
                     <Link to='/' className="btn btn-ghost normal-case text-xl">Toy Wala</Link>
                 </div>
             </div>

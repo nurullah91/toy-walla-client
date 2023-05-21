@@ -25,7 +25,10 @@ const Footer = () => {
             </div>
             <div>
 
-                <h4 className="text-xl font-bold text-white">Our Social media links</h4>
+                <h4 className="text-xl font-bold text-white">Contact with Us</h4>
+
+                <p>Phone: 0170000000</p>
+                <p>Email: sample@gmail.com</p>
                 <div className="flex justify-between items-center text-3xl mt-10">
                     <Link><FaFacebook className="ml-3"></FaFacebook></Link>
                     <Link><FaTwitter className="ml-3"></FaTwitter></Link>

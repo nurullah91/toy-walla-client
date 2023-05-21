@@ -33,7 +33,7 @@ const Shop = () => {
 
 
     return (
-        <div className="Shop-bg">
+        <div className="Shop-bg overflow-hidden">
             <h1 className="text-center text-rose-500 text-5xl font-bold py-10">Shop a Toy Car</h1>
 
             <div className="text-center my-5">

@@ -2,7 +2,7 @@ import Lottie from "lottie-react";
 import subscribe from '../../../assets/lottieSubscribe.json'
 const Subscribe = () => {
     return (
-        <div className="bg-[#26c0eb4d] ">
+        <div className="bg-[#26c0eb3e] ">
             <div className="flex w-11/12 lg:w-9/12 mx-auto py-10 flex-col-reverse lg:flex-row items-center">
                 <div className="grow">
                     <h3 className="text-center text-3xl font-bold text-pink-500">Subscribe For Get Update Regularly</h3>
