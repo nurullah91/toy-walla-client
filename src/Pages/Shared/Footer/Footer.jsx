@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="footer p-10 bg-slate-700  text-gray-300">
             <div>
-              <img className="rounded-full" src="https://i.ibb.co/1Grw9kX/logo1.png" alt="toy wala" />
+              <img className="rounded-full" src="https://i.ibb.co/ws55v8m/logo1-removebg-preview.png" alt="toy wala" />
                 <p>Toy Wala Enterprize<br />Providing reliable Toy since 1996</p>
             </div>
             <div>

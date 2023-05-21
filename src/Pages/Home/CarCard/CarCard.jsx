@@ -19,7 +19,7 @@ const CarCard = ({ car }) => {
       }, []);
 
     return (
-        <div data-aos="fade-up" className="card bg-[#42eeda2e] text-white shadow-xl">
+        <div data-aos="fade-up" className="card bg-[#88fefe62] text-white shadow-xl">
             <figure><img src={photoUrl} className="w-full h-52" alt="image" /></figure>
             <div className="p-8">
                 <h2 className="card-title">{toyName}</h2>

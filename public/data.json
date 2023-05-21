@@ -1,0 +1,63 @@
+[
+    {
+      "customerImg": "https://i.ibb.co/qYmPMNY/pexels-pixabay-220453.jpg",
+      "name": "John Doe",
+      "review": "Great service! The staff was very friendly and attentive. The food was delicious and the ambiance was lovely. Highly recommended!",
+      "ratings": 5
+    },
+    {
+      "customerImg": "https://i.ibb.co/FYbRvGw/pexels-andrea-piacquadio-774909.jpg",
+      "name": "Jane Smith",
+      "review": "I had a wonderful experience at this restaurant. The staff went above and beyond to make sure we had a memorable evening. The food was top-notch and the presentation was beautiful.",
+      "ratings": 4.5
+    },
+    {
+      "customerImg": "https://i.ibb.co/dQtgsC3/pexels-justin-shaifer-1222271.jpg",
+      "name": "David Johnson",
+      "review": "I'm impressed by the quality of the food and the service. The waitstaff was knowledgeable and friendly, and the dishes were prepared with great attention to detail. Will definitely be coming back!",
+      "ratings": 4.8
+    },
+    {
+      "customerImg": "https://i.ibb.co/hm8yHR8/pexels-simon-robben-614810.jpg",
+      "name": "Emily Wilson",
+      "review": "This place exceeded my expectations. The flavors were amazing, and the portion sizes were generous. The staff was also very accommodating to our dietary restrictions. Highly recommended!",
+      "ratings": 4.7
+    },
+    {
+      "customerImg": "https://i.ibb.co/m9wyWKD/pexels-andrea-piacquadio-733872.jpg",
+      "name": "Michael Brown",
+      "review": "I had a fantastic dining experience here. The atmosphere was cozy, the service was impeccable, and the food was simply outstanding. I can't wait to return!",
+      "ratings": 4.9
+    },
+    {
+      "customerImg": "https://i.ibb.co/cvM5R3k/pexels-creation-hill-1681010.jpg",
+      "name": "Sarah Davis",
+      "review": "The food was excellent and the service was exceptional. The staff was friendly and attentive throughout our meal. I highly recommend trying their signature dishes!",
+      "ratings": 4.6
+    },
+    {
+      "customerImg": "https://i.ibb.co/QjckYhq/pexels-bess-hamiti-35537.jpg",
+      "name": "Christopher Miller",
+      "review": "I was blown away by the flavors and presentation of the dishes. The attention to detail was evident in every aspect. It's definitely one of the best dining experiences I've had.",
+      "ratings": 4.9
+    },
+    {
+      "customerImg": "https://i.ibb.co/b6xVhjN/pexels-pixabay-220413.jpg",
+      "name": "Olivia Wilson",
+      "review": "The food was absolutely delicious and the service was outstanding. The staff was friendly and attentive, and the ambiance was perfect for a special occasion. Highly recommended!",
+      "ratings": 4.8
+    },
+    {
+      "customerImg": "https://i.ibb.co/CmRh1q1/pexels-naomi-shi-1001914.jpg",
+      "name": "Daniel Taylor",
+      "review": "I had a wonderful evening at this restaurant. The food was outstanding, and the staff was knowledgeable and attentive. The overall dining experience was truly memorable.",
+      "ratings": 4.7
+    },
+    {
+      "customerImg": "https://i.ibb.co/bWxHpcy/pexels-pixabay-36029.jpg",
+      "name": "Sophia Johnson",
+      "review": "From the moment we walked in, we felt welcomed and well taken care of. The food was superb and the service was top-notch. I would highly recommend dining here!",
+      "ratings": 4.9
+    }
+  ]
+  

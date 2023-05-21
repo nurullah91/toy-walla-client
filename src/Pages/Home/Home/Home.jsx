@@ -2,6 +2,8 @@ import { Helmet } from "react-helmet";
 import Shop from "../../Shop/Shop";
 import Slider from "../Slider/Slider";
 import Gallery from "../Gallery/Gallery";
+import CustomerReview from "../CustomerReview/CustomerReview";
+import Subscribe from "../Subscribe/Subscribe";
 
 
 const Home = () => {
@@ -16,6 +18,8 @@ const Home = () => {
            <Slider></Slider>
            <Gallery></Gallery>
            <Shop></Shop>
+           <CustomerReview></CustomerReview>
+           <Subscribe></Subscribe>
             
         </div>
     );
