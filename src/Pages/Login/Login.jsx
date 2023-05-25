@@ -22,7 +22,6 @@ const Login = () => {
         const form = event.target;
         const password = form.password.value;
         const email = form.email.value;
-        console.log(email, password);
 
         login(email, password)
             .then(() => {
@@ -53,9 +52,9 @@ const Login = () => {
     // google sign in 
     const handleGoogleSignIn = () => {
         googleSignIn()
-            .then(result => {
+            .then(() => {
                 setError('');
-                console.log(result.user);
+                navigate(from, { replace: true });
             })
             .catch(err => {
                 setError(err.message);

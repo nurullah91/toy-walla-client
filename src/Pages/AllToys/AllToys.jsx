@@ -24,7 +24,6 @@ const AllToys = () => {
         fetch(`https://toy-wala-server.vercel.app/cars-by-name/${searchText}`)
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
                 setToys(data);
             });
     };

@@ -29,7 +29,6 @@ const Shop = () => {
             })
 
     }, [category])
-    console.log(cars);
 
 
     return (

@@ -6,7 +6,6 @@ const Details = () => {
 
     const toy = useLoaderData();
     const { photoUrl, toyName, price, ratings, subCategory, sellerName, quantity, details, email } = toy;
-    console.log(toy);
 
     return (
         <div className="custom-bg">

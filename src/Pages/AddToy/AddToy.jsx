@@ -10,7 +10,6 @@ const AddToy = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
 
-        console.log(data)
         fetch(`https://toy-wala-server.vercel.app/addtoy`, {
             method: "POST",
             headers: {
