@@ -20,7 +20,9 @@ const CustomerReview = () => {
             }
 
             </Marquee>
-
+           <div className="text-center mt-10">
+           <button className="btn bg-rose-500 border-none">Add a review</button>
+           </div>
         </div>
     );
 };
