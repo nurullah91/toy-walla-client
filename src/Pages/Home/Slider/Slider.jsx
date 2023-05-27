@@ -10,7 +10,7 @@ const Slider = () => {
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://i.ibb.co/xfKgJgF/nubia-navarro-rg7z-Bt2c-A-Q-unsplash.jpg" className="w-full h-[80vh]" />
-                    <div className="absolute flex items-center pl-12 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 rounded-xl">
+                    <div className="absolute flex items-center pl-12 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 ">
 
                         <div className='space-y-7'>
                             <h1 className="text-6xl font-bold">Our Latest Toy Cars</h1>
@@ -20,7 +20,7 @@ const Slider = () => {
 
                     </div>
 
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div className="absolute  transform -translate-y-1/2 right-10 space-x-5 bottom-5">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <a href="#slide2" className="btn btn-circle">❯</a>
                     </div>
@@ -30,7 +30,7 @@ const Slider = () => {
 
                 <div id="slide2" className="carousel-item relative w-full">
                     <img src="https://i.ibb.co/KbWgpq7/toy-red-car-with-pinecone-top.jpg" className="w-full h-[80vh]" />
-                    <div className="absolute flex items-center pl-12 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 rounded-xl">
+                    <div className="absolute flex items-center pl-12 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 ">
 
                         <div className='space-y-7'>
                             <h1 className="text-6xl font-bold">Our Collections</h1>
@@ -40,7 +40,7 @@ const Slider = () => {
 
                     </div>
 
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div className="absolute transform -translate-y-1/2 right-10 space-x-5 bottom-5">
                         <a href="#slide1" className="btn btn-circle">❮</a>
                         <a href="#slide3" className="btn btn-circle">❯</a>
                     </div>
@@ -50,7 +50,7 @@ const Slider = () => {
 
                 <div id="slide3" className="carousel-item relative w-full">
                     <img src="https://i.ibb.co/tKhYnwx/closeup-small-toy-cars-table-with-small-christmas-trees-background.jpg" className="w-full h-[80vh]" />
-                    <div className="absolute flex items-center pl-12 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 rounded-xl">
+                    <div className="absolute flex items-center pl-12 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 ">
 
                         <div className='space-y-7'>
                             <h1 className="text-6xl font-bold">Your Safety</h1>
@@ -60,7 +60,7 @@ const Slider = () => {
 
                     </div>
 
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div className="absolute transform -translate-y-1/2 right-10 space-x-5 bottom-5">
                         <a href="#slide2" className="btn btn-circle">❮</a>
                         <a href="#slide4" className="btn btn-circle">❯</a>
                     </div>
@@ -70,7 +70,7 @@ const Slider = () => {
 
                 <div id="slide4" className="carousel-item relative w-full">
                     <img src="https://i.ibb.co/DwBF9tp/closeup-shot-small-toy-car-wooden-train-track.jpg" className="w-full h-[80vh]" />
-                    <div className="absolute flex items-center pl-12 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 rounded-xl">
+                    <div className="absolute flex items-center pl-12 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 ">
 
                         <div className='space-y-7'>
                             <h1 className="text-6xl font-bold">Discover more</h1>
@@ -80,7 +80,7 @@ const Slider = () => {
 
                     </div>
 
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div className="absolute transform -translate-y-1/2 right-10 space-x-5 bottom-5">
                         <a href="#slide3" className="btn btn-circle">❮</a>
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
