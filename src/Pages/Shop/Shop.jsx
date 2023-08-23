@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import CarCard from "../Home/carCard/CarCard";
 import Aos from "aos";
 import './Shop.css'
+import ParticlesCompo from "../Home/CustomerReview/Particles/ParticleBg";
 
 
 Aos.init({
@@ -57,6 +58,7 @@ const Shop = () => {
 
 
             </div>
+            <ParticlesCompo></ParticlesCompo>
         </div>
     );
 };

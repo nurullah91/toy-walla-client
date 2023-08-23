@@ -4,6 +4,7 @@ import Slider from "../Slider/Slider";
 import Gallery from "../Gallery/Gallery";
 import CustomerReview from "../CustomerReview/CustomerReview";
 import Subscribe from "../Subscribe/Subscribe";
+import Brands from "../Brands/Brands";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
            <Gallery></Gallery>
            <Shop></Shop>
            <CustomerReview></CustomerReview>
+           <Brands></Brands>
            <Subscribe></Subscribe>
             
         </div>
