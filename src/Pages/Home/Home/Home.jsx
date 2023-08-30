@@ -5,6 +5,7 @@ import Gallery from "../Gallery/Gallery";
 import CustomerReview from "../CustomerReview/CustomerReview";
 import Subscribe from "../Subscribe/Subscribe";
 import Brands from "../Brands/Brands";
+import HowToBuy from "../HowToBuy/HowToBuy";
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
            <Shop></Shop>
            <CustomerReview></CustomerReview>
            <Brands></Brands>
+           <HowToBuy></HowToBuy>
            <Subscribe></Subscribe>
             
         </div>
