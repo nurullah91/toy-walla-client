@@ -11,51 +11,41 @@ const Blog = () => {
 
             <div className="p-10">
                 <div className="w-11/12 lg:-9/12 mx-auto">
+
                     <div className="bg-blue-50 my-8 p-5 rounded-md">
-                        <h2 className="text-2xl font-bold my-3 text-rose-500">What is an access token and refresh token? How do they work and where should we store them on the client-side?</h2>
-                        <p className="text-green-700">An access token and a refresh token are commonly used in authentication systems to secure and manage user sessions. Its crucial to implement appropriate security measures when storing and transmitting tokens. Ensure the tokens are transmitted over secure HTTPS connections and properly validate and verify them on the server-side to prevent token-based attacks.
+                        <h2 className="text-2xl font-bold my-3 text-rose-500">Unleashing Joy: The Timeless Allure of Toy Cars</h2>
+                        <p className="text-slate-700">
+                            <strong className="block text-rose-500 text-xl mt-2">Introduction</strong>
+                            In a world that&apos;s constantly evolving, there&apos;s something beautifully nostalgic about the steadfast charm of toy cars. These miniature marvels have transcended generations, captivating the hearts of young and old alike. At Toy wala, we celebrate the enduring appeal of toy cars – not just as playthings, but as vehicles of imagination, collectors gems, and cherished memories.
+
+                            <strong className="block text-rose-500 text-xl mt-2">A Glimpse into the Past</strong>
+                            The roots of toy cars trace back to simpler times when creativity knew no bounds. From hand-carved wooden wonders to intricately designed tinplate treasures, early toy cars were a testament to human ingenuity. As the automobile industry blossomed, so did the world of miniature vehicles. The mid-20th century marked a turning point with the introduction of die-casting techniques, giving birth to exquisitely detailed models that mirrored their life-sized counterparts.
+                            
+                        </p>
+
+                        <p className="text-slate-700">
+                            <strong className="block text-rose-500 text-xl mt-2">More Than Just Play</strong>
+                            While toy cars are undeniably fun, they&apos;re also powerful tools for growth and development. For children, they spark imaginative narratives, foster hand-eye coordination, and even introduce basic principles of physics as they push, pull, and race their tiny treasures. Through play, children simulate real-world scenarios, honing problem-solving skills and creativity in the process.
+                        </p>
+                        <p className="text-slate-700">
+                            <strong className="block text-rose-500 text-xl mt-2">Collectors Haven</strong>
+                            What starts as a childhood fascination often evolves into a lifelong passion. Collecting toy cars isn&apos;t just a hobby; it&apos;s a journey through history, innovation, and design. Enthusiasts scour markets and online auctions to unearth rare gems, each one a testament to the artistry and craftsmanship of its era. Whether it&apos;s classic Dinky Toys, sleek Hot Wheels, or authentic scale models, each piece tells a story and carries a piece of automotive history.
+                        </p>
+                        <p className="text-slate-700">
+                            <strong className="block text-rose-500 text-xl mt-2">Modern Wonders</strong>
+                            As technology races forward, so too do toy cars. Remote-controlled vehicles have entered the scene, adding a dynamic dimension to the traditional play experience. These modern wonders blend innovation with nostalgia, allowing both children and adults to pilot their dreams and explore new horizons of fun.
+                        </p>
+                        <p className="text-slate-700">
+                            <strong className="block text-rose-500 text-xl mt-2">Conclusion</strong>
+                            In a world captivated by screens and digital entertainment, the enduring charm of toy cars stands as a reminder of simpler joys. At Toy wala, we&apos;re passionate about preserving this legacy of imagination, craftsmanship, and play. Whether you&apos;re reliving the magic of childhood or embarking on a journey of collecting, toy cars continue to ignite smiles and kindle the fires of imagination – reminding us that the road of play is one that never ends.
+
+
+
+
 
                         </p>
                     </div>
-
-
-
-                    <div className="bg-blue-50 my-8 p-5 rounded-md">
-                        <h2 className="text-2xl font-bold my-3 text-rose-500">Who is better?Compare SQL and NoSQL databases.</h2>
-                        <p className="text-green-700">
-                            SQL and NoSQL databases differ in their data models, query languages, scalability, and use cases.
-
-                            <strong className="block text-rose-500">SQL Databases:</strong>
-                            <li>Data Model: SQL databases use a structured, tabular data model with predefined schemas. They have tables with rows and columns, and relationships between tables are established using foreign keys.</li>
-                            <li>Query Language: SQL databases use the Structured Query Language (SQL) to query and manipulate data. SQL provides a standardized way to interact with relational databases.</li>
-                            <li>Schema: SQL databases enforce a schema, which defines the structure, data types, and constraints for the data in the tables. Changes to the schema often require modifying the database structure.</li>
-
-                            <strong className="block text-rose-500">NoSQL Databases:</strong>
-
-                            <li>Schema: NoSQL databases offer schema flexibility, allowing for schema-less or dynamic schemas. Data can be added without predefined structures or strict constraints.</li>
-                            <li>Query Language: NoSQL databases may use different query languages specific to their data model. For example, MongoDB uses a query language similar to JSON for document-based querying.</li>
-                            <li>Data Model: NoSQL databases use various data models, such as key-value, document, columnar, or graph-based. They provide flexible schemas or no schemas at all, allowing for dynamic and unstructured data.</li>
-                        </p>
-                    </div>
-
-                    <div className="bg-blue-50 my-8 p-5 rounded-md">
-                        <h2 className="text-2xl font-bold my-3 text-rose-500">What is express js? What is Nest JS?</h2>
-                        <p className="text-green-700">Express.js is a minimalistic web application framework for Node.js, offering simplicity and flexibility. It focuses on handling HTTP requests and responses, routing, middleware, and view rendering. Nest.js, built on top of Express.js, is a progressive framework that adds additional features and architectural patterns. It leverages TypeScript, promotes modular architecture, and provides out-of-the-box support for routing, middleware, and more. Nest.js is suitable for building scalable and maintainable server-side applications.
-
-                        </p>
-                    </div>
-
-                    <div className="bg-blue-50 my-8 p-5 rounded-md">
-                        <h2 className="text-2xl font-bold my-3 text-rose-500">What is MongoDB aggregate and how does it work?</h2>
-                        <p className="text-green-700">The aggregate method in MongoDB allows for complex data analysis and transformation operations on collections.
-                            It works by utilizing a pipeline of stages, where each stage represents a specific data processing operation.
-                            Stages can include filtering, grouping, sorting, projecting, joining, and aggregating data.
-                            The pipeline stages are executed sequentially, with the output of one stage serving as the input to the next.
-                            The method utilizes MongoDB&apos;s Aggregation Framework, providing powerful operators and expressions for data manipulation.
-                            The result is a cursor that can be iterated to retrieve the processed data, including grouped, aggregated, and transformed documents.
-
-                        </p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
