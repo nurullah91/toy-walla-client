@@ -17,7 +17,7 @@ const CustomerReview = () => {
         <div className="py-20">
 
             <h3 className="text-center text-4xl font-bold text-rose-500">Our Customers Review</h3>
-            <Marquee direction="right" speed={100} pauseOnClick={true}>
+            <Marquee direction="right" speed={100} pauseOnHover={true}>
 
             { 
                 reviews.map(review=><ReviewCard key={review._id} reviews={review}></ReviewCard>)

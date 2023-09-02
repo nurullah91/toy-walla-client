@@ -9,7 +9,7 @@ const Slider = () => {
         <div>
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/xfKgJgF/nubia-navarro-rg7z-Bt2c-A-Q-unsplash.jpg" className="w-full h-[40vh] lg:h-[70vh]" />
+                    <img src="https://i.ibb.co/D5y5h1Q/slider1.jpg" className="w-full h-[40vh] lg:h-[70vh]" />
                     <div className="absolute flex items-center md:pl-12 pl-5 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 ">
 
                         <div className='space-y-7'>
@@ -29,7 +29,7 @@ const Slider = () => {
 
 
                 <div id="slide2" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/KbWgpq7/toy-red-car-with-pinecone-top.jpg" className="w-full h-[40vh] lg:h-[70vh]" />
+                    <img src="https://i.ibb.co/KNGfYqY/slider4.jpg" className="w-full h-[40vh] lg:h-[70vh]" />
                     <div className="absolute flex items-center md:pl-12 pl-5 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 ">
 
                         <div className='space-y-7'>
@@ -49,7 +49,7 @@ const Slider = () => {
 
 
                 <div id="slide3" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/tKhYnwx/closeup-small-toy-cars-table-with-small-christmas-trees-background.jpg" className="w-full h-[40vh] lg:h-[70vh]" />
+                    <img src="https://i.ibb.co/qnJF97c/slider3.jpg" className="w-full h-[40vh] lg:h-[70vh]" />
                     <div className="absolute flex items-center md:pl-12 pl-5 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 ">
 
                         <div className='space-y-7'>
@@ -69,7 +69,7 @@ const Slider = () => {
 
 
                 <div id="slide4" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/DwBF9tp/closeup-shot-small-toy-car-wooden-train-track.jpg" className="w-full h-[40vh] lg:h-[70vh]" />
+                    <img src="https://i.ibb.co/jyCsZTH/slider2.jpg" className="w-full h-[40vh] lg:h-[70vh]" />
                     <div className="absolute flex items-center md:pl-12 pl-5 text-white left-0 w-3/4 lg:w-1/2 bg-gradient-to-r from-[#151515] via-[#00000076] to-[rgba(21, 21, 21, 0)] h-full top-0 ">
 
                         <div className='space-y-7'>
