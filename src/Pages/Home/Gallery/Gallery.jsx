@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import GalleryCard from "./GalleryCard";
 import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
     const [images, setImages] = useState([]);
@@ -24,7 +25,7 @@ const Gallery = () => {
 
             </Marquee>
             <div className="text-center mt-10">
-                <button className="btn bg-rose-500 border-none">Add a photo</button>
+                <Link to="/add-gallery-photo" className="btn bg-rose-500 border-none">Add a photo</Link>
             </div>
         </div>
     );

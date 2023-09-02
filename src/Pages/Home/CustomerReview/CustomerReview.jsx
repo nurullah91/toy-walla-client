@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ReviewCard from "./ReviewCard";
 import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
 // import ParticleBg from "./Particles/ParticleBg";
 
 const CustomerReview = () => {
@@ -25,7 +26,7 @@ const CustomerReview = () => {
 
             </Marquee>
            <div className="text-center mt-10">
-           <button className="btn bg-rose-500 border-none">Add a review</button>
+           <Link to='add-review' className="btn bg-rose-500 border-none">Add a review</Link>
            </div>
            
            {/* <ParticleBg></ParticleBg> */}

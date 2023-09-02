@@ -13,6 +13,8 @@ import Register from "../Pages/Register/Register";
 import UpdateToy from "../Pages/MyToys/UpdateToy";
 import Details from "../Pages/Details/Details";
 import PrivateRout from "./PrivateRout";
+import AddGalleryPhoto from "../Pages/Home/Gallery/AddGalleryPhoto";
+import AddReview from "../Pages/Home/CustomerReview/AddReview";
 
 
 
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
         {
             path: '/addtoy',
             element: <PrivateRout><AddToy></AddToy></PrivateRout>
+        },
+        {
+            path: '/add-gallery-photo',
+            element: <AddGalleryPhoto></AddGalleryPhoto>
+        },
+        {
+            path: '/add-review',
+            element: <AddReview></AddReview>
         },
         {
             path: "/blog",

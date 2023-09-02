@@ -7,7 +7,7 @@
 
 ## If You face any problem please contact with us
 
-
+#### This website is created on vite. To run this project locally please command this "npm i" and then "npm run dev" then it will run on the localhost 5073 port.
 
 
 
