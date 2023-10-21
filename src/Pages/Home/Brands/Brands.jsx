@@ -20,38 +20,41 @@ const Brands = () => {
     }, [])
 
     return (
-        <div className=" w-11/12 md:w-9/12 mx-auto">
-            <h3 className="text-center text-4xl font-bold text-rose-500">Our Top Brands</h3>
+        <div className="bg-gradient-to-r from-violet-400 via-purple-400 to-rose-300 pt-20 pb-28">
 
-            <Swiper
-                effect={'coverflow'}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={'auto'}
-                autoplay={{
-                    delay: 1000,
-                    disableOnInteraction: false,
-                }}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                }}
-                pagination={true}
-                modules={[Autoplay, EffectCoverflow, Pagination]}
-                className="mySwiper"
-            >
+            <div className=" w-11/12 md:w-9/12 mx-auto">
+                <h3 className="text-center text-4xl font-bold text-rose-500">Our Top Brands</h3>
 
-                {
-                    brands.map(brand => <SwiperSlide key={brand._id}>
-                        <img className="w-52 h-52" src={brand.logo} />
-                    </SwiperSlide>)
-                }
+                <Swiper
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    autoplay={{
+                        delay: 1000,
+                        disableOnInteraction: false,
+                    }}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    }}
+                    pagination={true}
+                    modules={[Autoplay, EffectCoverflow, Pagination]}
+                    className="mySwiper"
+                >
 
-            </Swiper>
+                    {
+                        brands.map(brand => <SwiperSlide key={brand._id}>
+                            <img className="w-52 h-52" src={brand.logo} />
+                        </SwiperSlide>)
+                    }
 
+                </Swiper>
+
+            </div>
         </div>
     );
 };

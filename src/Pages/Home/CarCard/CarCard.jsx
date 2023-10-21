@@ -14,7 +14,7 @@ const CarCard = ({ car }) => {
         AOS.init({
           duration: 1000,
           delay: 200,
-          easing: 'ease-in-out',
+          easing: 'ease-in-sine',
         });
       }, []);
 
