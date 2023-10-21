@@ -1,4 +1,8 @@
-import { FaStar } from "react-icons/fa";
+import { Rating } from '@smastrom/react-rating'
+// react rating styles
+import '@smastrom/react-rating/style.css'
+
+
 
 const ReviewCard = ({reviews}) => {
     const {customerImg, name, review, ratings} = reviews;
@@ -8,7 +12,8 @@ const ReviewCard = ({reviews}) => {
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
                 <p>{review}</p>
-                <div className="font-bold"><p>Ratings: {ratings} <FaStar className="inline text-yellow-500"></FaStar></p> </div>
+                {/* <div className="font-bold"><p>Ratings: {ratings} <FaStar className="inline text-yellow-500"></FaStar></p></div> */}
+                <div className="font-bold flex items-center">Ratings:<Rating className='ml-3' style={{ maxWidth: 100 }} value={ratings} readOnly /></div>
             </div>
         </div>
     );

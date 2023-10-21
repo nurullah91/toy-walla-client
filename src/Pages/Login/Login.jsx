@@ -1,6 +1,7 @@
 
 import { useContext, useState } from 'react';
-import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
@@ -113,9 +114,9 @@ const Login = () => {
 
                     <h4 className='mt-6 text-white'>Login With</h4>
                     <div className='text-center'>
-                        <button onClick={handleGoogleSignIn} className='p-3 rounded-md bg-gradient-to-r from-red-600 via-yellow-500 to-green-500 border-none w-9/12 mt-3'>
+                        <button onClick={handleGoogleSignIn} className='p-3 rounded-md bg-gradient-to-r from-rose-500 via-yellow-400 to-green-400 hover:from-slate-200 hover:to-slate-300 border-none w-9/12 mt-3 font-bold'>
 
-                            <FaGoogle className=' text-blue-600 inline mr-2 text-2xl'></FaGoogle> Google</button>
+                            <FcGoogle className=' text-blue-600 inline text-2xl'></FcGoogle> Google</button>
                     </div>
 
                     <p className='text-red-500 my-2'>{error}</p>

@@ -7,6 +7,7 @@ import Subscribe from "../Subscribe/Subscribe";
 import Brands from "../Brands/Brands";
 import HowToBuy from "../HowToBuy/HowToBuy";
 import SendGift from "../SendGift/SendGift";
+import WhyChoose from "../WhyChoose/WhyChoose";
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
            <Shop></Shop>
            <CustomerReview></CustomerReview>
            <Brands></Brands>
+           <WhyChoose></WhyChoose>
            <HowToBuy></HowToBuy>
            <SendGift></SendGift>
            <Subscribe></Subscribe>
