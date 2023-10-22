@@ -8,6 +8,7 @@ import Brands from "../Brands/Brands";
 import HowToBuy from "../HowToBuy/HowToBuy";
 import SendGift from "../SendGift/SendGift";
 import WhyChoose from "../WhyChoose/WhyChoose";
+import OfferPage from "../OfferPage/OfferPage";
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
            <WhyChoose></WhyChoose>
            <HowToBuy></HowToBuy>
            <SendGift></SendGift>
+           <OfferPage></OfferPage>
            <Subscribe></Subscribe>
             
         </div>
