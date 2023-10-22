@@ -9,6 +9,7 @@ import HowToBuy from "../HowToBuy/HowToBuy";
 import SendGift from "../SendGift/SendGift";
 import WhyChoose from "../WhyChoose/WhyChoose";
 import OfferPage from "../OfferPage/OfferPage";
+import Safety from "../Safety/Safety";
 
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
            <HowToBuy></HowToBuy>
            <SendGift></SendGift>
            <OfferPage></OfferPage>
+           <Safety></Safety>
            <Subscribe></Subscribe>
             
         </div>
