@@ -13,8 +13,8 @@ const WhyChoose = () => {
 
     useEffect(() => {
         AOS.init({
-          duration: 1000,
-          delay: 200,
+          duration: 800,
+          delay: 50,
           easing: 'ease-in-out',
         });
       }, []);
