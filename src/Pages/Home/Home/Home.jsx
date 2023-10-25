@@ -10,6 +10,7 @@ import SendGift from "../SendGift/SendGift";
 import WhyChoose from "../WhyChoose/WhyChoose";
 import OfferPage from "../OfferPage/OfferPage";
 import Safety from "../Safety/Safety";
+import Customize from "../Customize/Customize";
 
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
            <HowToBuy></HowToBuy>
            <SendGift></SendGift>
            <OfferPage></OfferPage>
+           <Customize></Customize>
            <Safety></Safety>
            <Subscribe></Subscribe>
             

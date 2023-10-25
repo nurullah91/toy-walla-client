@@ -1,3 +1,4 @@
+// Icons
 import { AiFillSafetyCertificate } from 'react-icons/ai';
 import { IoIosPricetags } from 'react-icons/io';
 import { RiCustomerService2Fill } from 'react-icons/ri';
@@ -5,10 +6,12 @@ import { TbTruckDelivery } from 'react-icons/tb';
 import { GoSmiley } from 'react-icons/go';
 import { GiMultipleTargets } from 'react-icons/gi';
 
+// Aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
 
+import { useEffect } from "react";
+import CountUp from 'react-countup';
 const WhyChoose = () => {
 
     useEffect(() => {
@@ -31,15 +34,15 @@ const WhyChoose = () => {
 
                     <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
                         <div className="bg-rose-100 px-5 hover:scale-110 transition-all duration-300 hover:bg-rose-200 py-3 rounded text-center">
-                            <h3 className="text-5xl font-bold">1000+</h3>
+                            <h3 className="text-5xl font-bold"> <CountUp end={1000} enableScrollSpy={true} scrollSpyDelay={100} />+</h3>
                             <h3 className="text-2xl my-2">Best toy cars</h3>
                         </div>
                         <div className="bg-rose-100 px-5 hover:scale-110 transition-all duration-300 hover:bg-rose-200 py-3 rounded text-center">
-                            <h3 className="text-5xl font-bold">10k+</h3>
+                            <h3 className="text-5xl font-bold"><CountUp end={10} enableScrollSpy={true} scrollSpyDelay={100} />k+</h3>
                             <h3 className="text-2xl my-2">Satisfied customer</h3>
                         </div>
                         <div className="bg-rose-100 px-5 hover:scale-110 transition-all duration-300 hover:bg-rose-200 py-3 rounded text-center">
-                            <h3 className="text-5xl font-bold">24 Hour</h3>
+                            <h3 className="text-5xl font-bold"> <CountUp end={24} enableScrollSpy={true} scrollSpyDelay={100} /> Hour</h3>
                             <h3 className="text-2xl my-2">Fastest delivery</h3>
                         </div>
                         <div className="bg-rose-100 px-5 hover:scale-110 transition-all duration-300 hover:bg-rose-200 py-3 rounded text-center">
