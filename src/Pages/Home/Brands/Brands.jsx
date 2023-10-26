@@ -20,7 +20,7 @@ const Brands = () => {
     }, [])
 
     return (
-        <div className="bg-gradient-to-r from-violet-400 via-purple-400 to-rose-300 pt-20 pb-28">
+        <div className="bg-gradient-to-r from-blue-200 via-violet-400 to-rose-300 pt-20 pb-28">
 
             <div className=" w-11/12 md:w-9/12 mx-auto">
                 <h3 className="text-center text-4xl font-bold text-rose-500">Our Top Brands</h3>

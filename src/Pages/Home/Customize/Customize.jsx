@@ -24,7 +24,7 @@ const Customize = () => {
 
                 {/* react timeline */}
                 <VerticalTimeline
-                    lineColor='#ea4777'
+                    lineColor='#FF2551'
                     animate={true}
 
                 >

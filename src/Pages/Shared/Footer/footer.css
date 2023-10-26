@@ -1,0 +1,7 @@
+.footerBg{
+    background-image: url(./footerImg.svg);
+    background-position: 0px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
