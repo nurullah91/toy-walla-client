@@ -16,7 +16,7 @@ import 'react-vertical-timeline-component/style.min.css';
 const Customize = () => {
     return (
         <div className="my-12">
-            <div className="w-11/12 md:w-9/12 mx-auto">
+            <div className="overflow-hidden w-11/12 md:w-9/12 mx-auto">
                 <h1 className="text-center text-rose-500 text-4xl font-bold mb-3">Your Gateway to Personalization</h1>
                 <p className="w-3/4 text-center mx-auto">Unleash your inner artist and transform ordinary toy cars into unique, customized masterpieces. In this section, we&apos;ll guide you through the steps and materials needed to breathe new life into your toy car collection.</p>
 

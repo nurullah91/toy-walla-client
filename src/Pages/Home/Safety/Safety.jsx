@@ -25,7 +25,7 @@ const Safety = () => {
                 <h1 className="text-center text-rose-500 text-4xl font-bold mb-10">Safety tips for kids</h1>
 
                 <div className="">
-                    <div className="grid grid-cols-1 md:grid-cols-9 items-center gap-x-6 md:gap-y-12">
+                    <div className="overflow-hidden grid grid-cols-1 md:grid-cols-9 items-center gap-x-6 md:gap-y-12">
                         <div data-aos="fade-right" className="md:col-span-4">
                             <h4 className="text-2xl font-bold text-slate-600 pb-3 ">Keep Distance from Electricity</h4>
                             <div className="min-h-[5px] bg-orange-400 w-1/3 mb-5"></div>
